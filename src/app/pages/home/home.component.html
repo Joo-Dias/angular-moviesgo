@@ -1,1 +1,15 @@
 <p>home works!</p>
+
+<!-- <div *ngIf="movieDetails">
+  <h2>{{ movieDetails.title }}</h2>
+  <p>Descrição: {{ movieDetails.overview }}</p>
+  <p>Data de lançamento: {{ movieDetails.release_date }}</p>
+  <p>Nota média: {{ movieDetails.vote_average }}</p>
+  <img src="{{getImageUrl(movieDetails.poster_path)}}" alt="{{movieDetails.title}}">
+</div> -->
+
+<div *ngFor="let movie of movies">
+  <h2>{{ movie.title }}</h2>
+  <p>{{ movie.overview }}</p>
+  <img src="{{getImageUrl(movie.poster_path)}}" alt="{{movie.title}}">
+</div>
