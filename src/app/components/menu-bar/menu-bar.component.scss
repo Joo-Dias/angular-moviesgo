@@ -1,0 +1,60 @@
+.menuBar-container {
+  display: flex;
+  flex-direction: column;
+
+  border-right: .5px solid #313131b9;
+
+  color: white;
+
+  position: fixed;
+  height: 100%;
+  width: 16rem;
+  top: 0;
+  left: 0;
+
+  .menuBar-logo {
+    font-weight: bolder;
+    display: flex;
+    margin-left: 2rem;
+
+    margin-top: 1rem;
+
+    p {
+      font-size: larger;
+      overflow: hidden;
+    }
+
+    span {
+      color: #AC1B1B;
+    }
+  }
+
+  .menuBar-menu {
+    margin-left: 2rem;
+    overflow: hidden;
+
+    span {
+      font-weight: 600;
+      color: #646468;
+    }
+
+    .menuBar-list {
+      list-style: none;
+
+      .menuBar-listItem {
+        font-weight: 700;
+
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+
+        display: flex;
+        align-items: center;
+
+        gap: 1rem;
+
+        }
+      }
+    }
+
+
+  }
