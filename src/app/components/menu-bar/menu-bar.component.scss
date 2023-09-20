@@ -43,11 +43,12 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
 
+        border-radius: 25px;
 
+        transition: background-color 0.5s ease;
 
-        :hover {
+        &:hover {
           background-color: #AC1B1B;
-          border-radius: 20px;
         }
 
         a {
@@ -75,3 +76,22 @@
     }
   }
 }
+
+// .menuBarlist {
+//   list-style: none;
+//   width: 100%;
+// }
+
+// .menuBar-listItem {
+//   width: 80%;
+//   margin-top: 1rem;
+//   margin-bottom: 1rem;
+
+//   border-radius: 25px;
+
+//   transition: 1s;
+// }
+
+// .menuBar-listItem:hover {
+//   background: #AC1B1B;
+// }
