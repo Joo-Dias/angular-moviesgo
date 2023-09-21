@@ -8,41 +8,50 @@
     <ul class="menuBar-list">
       <li class="menuBar-listItem">
         <a href="">
-          <i class="material-icons">home</i>
+          <fa-icon [icon]="Home"></fa-icon>
           Home
         </a>
       </li>
 
       <li class="menuBar-listItem">
         <a href="">
-          <i class="material-icons">trending_up</i>
+          <fa-icon [icon]="Trending"></fa-icon>
           Tedência
         </a>
       </li>
 
       <li class="menuBar-listItem">
         <a href="">
-          <i class="material-icons">explore </i>
+          <fa-icon [icon]="Compass"></fa-icon>
           Procurar
         </a>
     </li>
 
       <li class="menuBar-listItem">
         <a href="">
-          <i class="material-icons">shuffle</i>
+          <fa-icon [icon]="Shuffle"></fa-icon>
           Mistério
         </a>
       </li>
     </ul>
 
     <hr>
-
-    <div class="menuBar-links">
-      <ul class="menuBar-myLinks">
-        <li>Linkedin</li>
-        <li>Github</li>
-      </ul>
-    </div>
+  </div>
+  <div class="menuBar-links">
+    <ul class="menuBar-myLinks">
+      <li class="menuBar-myLinksItemLinkedin">
+        <a href="https://www.linkedin.com/in/joao--dias/" target="_blank">
+          <fa-icon [icon]="Linkedin"></fa-icon>
+          Linkedin
+        </a>
+      </li>
+      <li class="menuBar-myLinksItemGithub">
+        <a href="https://github.com/Joo-Dias" target="_blank">
+          <fa-icon [icon]="Github"></fa-icon>
+          Github
+        </a>
+      </li>
+    </ul>
   </div>
 </div>
 

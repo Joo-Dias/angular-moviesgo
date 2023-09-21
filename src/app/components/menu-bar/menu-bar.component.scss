@@ -25,7 +25,7 @@
   }
 
   .menuBar-menu {
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-top: 1rem;
 
     span {
@@ -62,7 +62,7 @@
 
           padding: 1rem;
 
-          i {
+          fa-icon {
             margin-right: 1.5rem;
           }
         }
@@ -70,28 +70,81 @@
     }
 
     hr {
-      width: 80%;
+      width: 90%;
       border-radius: 50%;
       border: .5px solid #313131b9;
     }
   }
+
+  .menuBar-links {
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+    .menuBar-myLinks {
+      list-style: none;
+      width: 100%;
+
+      .menuBar-myLinksItemLinkedin {
+        width: 80%;
+
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        border-radius: 25px;
+
+        transition: background-color 0.5s ease;
+
+        &:hover {
+          background-color: #0A66C2;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+
+          font-weight: bold;
+          font-size: larger;
+          text-decoration: none;
+          color: white;
+
+          padding: 1rem;
+
+          fa-icon {
+            margin-right: 1.5rem;
+          }
+        }
+      }
+
+      .menuBar-myLinksItemGithub {
+        width: 80%;
+
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        border-radius: 25px;
+
+        transition: background-color 0.5s ease;
+
+        &:hover {
+          background-color: #22272E;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+
+          font-weight: bold;
+          font-size: larger;
+          text-decoration: none;
+          color: white;
+
+          padding: 1rem;
+
+          fa-icon {
+            margin-right: 1.5rem;
+          }
+        }
+      }
+    }
+  }
 }
-
-// .menuBarlist {
-//   list-style: none;
-//   width: 100%;
-// }
-
-// .menuBar-listItem {
-//   width: 80%;
-//   margin-top: 1rem;
-//   margin-bottom: 1rem;
-
-//   border-radius: 25px;
-
-//   transition: 1s;
-// }
-
-// .menuBar-listItem:hover {
-//   background: #AC1B1B;
-// }
