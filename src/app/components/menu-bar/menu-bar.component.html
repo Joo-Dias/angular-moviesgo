@@ -7,7 +7,7 @@
     <span>MENU</span>
     <ul class="menuBar-list">
       <li class="menuBar-listItem">
-        <a href="">
+        <a [routerLink]="['/']" [routerLinkActive]="['activated']" [routerLinkActiveOptions]="{exact: true}">
           <fa-icon [icon]="Home"></fa-icon>
           Home
         </a>

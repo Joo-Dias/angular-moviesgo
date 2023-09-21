@@ -1,0 +1,66 @@
+.home-container {
+  border: 1px solid blue;
+
+  margin-left: 16rem;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+
+  .home-movieList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    img {
+      max-width: 200px;
+      min-width: 200px;
+
+      min-height: 300px;
+    }
+
+    .home-movieListButton {
+      height: 3rem;
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+
+      border-radius: 0 0 25px 25px;
+
+      background-color: #AC1B1B;
+
+      transition: background-color 0.5s ease;
+
+      cursor: pointer;
+
+      img {
+        width: 100%;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+
+        font-size: medium;
+        font-weight: bold;
+      }
+
+      &:hover {
+        background-color: white;
+        border: 2px solid #AC1B1B;
+
+        a {
+          color: #AC1B1B;
+        }
+      }
+    }
+  }
+}

@@ -148,3 +148,14 @@
     }
   }
 }
+
+.activated {
+  background-color: #AC1B1B;
+  border-radius: 25px;
+
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: #941717;
+  }
+}
