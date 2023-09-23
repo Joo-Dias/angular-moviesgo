@@ -1,66 +1,80 @@
 .home-container {
   border: 1px solid blue;
 
-  margin-left: 16rem;
+  background-color: white;
 
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 
-  justify-content: center;
-  align-items: center;
+  margin-left: 16rem;
 
-  gap: 2rem;
+  .home-containerCarousel {
 
-  .home-movieList {
+  }
+
+  .home-containerMovieList {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+    flex-wrap: wrap;
 
-    img {
-      max-width: 200px;
-      min-width: 200px;
+    justify-content: center;
+    align-items: center;
 
-      min-height: 300px;
-    }
+    gap: 2rem;
 
-    .home-movieListButton {
-      height: 3rem;
-      width: 100%;
-
+    .home-movieList {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      align-self: center;
-
-      border-radius: 0 0 25px 25px;
-
-      background-color: #AC1B1B;
-
-      transition: background-color 0.5s ease;
-
-      cursor: pointer;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
 
       img {
+        max-width: 200px;
+        min-width: 200px;
+        min-height: 300px;
+
+        border-radius: 25px 25px 0 0;
+      }
+
+      .home-movieListButton {
+        height: 3rem;
         width: 100%;
-      }
 
-      a {
-        color: white;
-        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
 
-        font-size: medium;
-        font-weight: bold;
-      }
+        border-radius: 0 0 25px 25px;
 
-      &:hover {
-        background-color: white;
-        border: 2px solid #AC1B1B;
+        background-color: #AC1B1B;
+
+        transition: background-color 0.5s ease;
+
+        cursor: pointer;
+
+        img {
+          width: 100%;
+        }
 
         a {
-          color: #AC1B1B;
+          color: white;
+          text-decoration: none;
+
+          font-size: medium;
+          font-weight: bold;
+        }
+
+        &:hover {
+          background-color: white;
+          border: 2px solid #AC1B1B;
+
+          a {
+            color: #AC1B1B;
+          }
         }
       }
     }
   }
 }
+
+
