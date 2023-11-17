@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
+import { MovieData } from '../models/movieData';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -19,6 +21,11 @@ export class MoviesService {
 
   getPopularMovies(): Observable<any> {
     const url = `${this.apiUrl}/movie/popular?api_key=${this.apiKey}&language=pt-BR&page=1`;
+    return this.http.get(url);
+  }
+
+  getTopRatedMovies(): Observable<any> {
+    const url = `${this.apiUrl}/movie/top_rated?api_key=${this.apiKey}&language=pt-BR&page=1`;
     return this.http.get(url);
   }
 

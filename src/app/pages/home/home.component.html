@@ -13,6 +13,12 @@
       <ng-container *ngFor="let movie of randomMovies.slice(0, 4)">
         <ng-template carouselSlide [id]="movie.id">
           <img src="{{ getImageCarousel(movie.backdrop_path) }}" alt="{{ movie.title }}" />
+
+          <div class="carousel-movieTitle">
+            <span>{{movie.title}}</span>
+            <button>Assista</button>
+          </div>
+
         </ng-template>
       </ng-container>
     </owl-carousel-o>
@@ -20,7 +26,7 @@
 
   <!-- Lista de filmes -->
   <div class="home-containerMovieList">
-    <div class="home-movieList" *ngFor="let movie of movies.slice(0 ,10)">
+    <div class="home-movieList" *ngFor="let movie of movies">
       <img src="{{ getImageUrl(movie.poster_path) }}" alt="{{ movie.title }}" />
       <div class="home-movieListButton">
         <a href="">Assista</a>

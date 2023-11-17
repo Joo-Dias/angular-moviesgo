@@ -5,6 +5,12 @@ import { HttpClient } from '@angular/common/http';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 import { MoviesService } from 'src/app/services/movies.service';
+import { MovieData } from 'src/app/models/movieData';
+
+import {
+  faArrowLeft,
+  faArrowRight
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -12,11 +18,19 @@ import { MoviesService } from 'src/app/services/movies.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  arrowLeft = faArrowLeft;
+  arrowRight = faArrowRight;
+
+
   movieId: any;
   movieDetails: any;
+  genres: any[] = [];
   movies: any[] = [];
+  topRatedMovies: any[] = [];
 
   randomMovies: any[] = [];
+
+  // Carrosel
   customOptions: OwlOptions = {
     items: 1,
     loop: true,
@@ -25,10 +39,10 @@ export class HomeComponent implements OnInit {
     pullDrag: true,
     dots: true,
     navSpeed: 700,
-    navText: ['Anteriro', 'Próximo'],
+    navText: ['<span class="setaEsquerda">Próximo</span>' , '<span class="setaDireita">Próximo</span>'],
     responsive: {
       0: {
-        items: 1
+        items: 1,
       }
     },
     nav: true
@@ -51,9 +65,13 @@ export class HomeComponent implements OnInit {
     // Pegando os dados dos filmes
     this.moviesService.getPopularMovies().subscribe((data: any) => {
       this.movies = data.results;
+    });
+
+    // Pegando os dados dos filmes
+    this.moviesService.getTopRatedMovies().subscribe((data: any) => {
+      this.topRatedMovies = data.results;
       this.getRandomMovies();
-      // console.log(this.movies);
-    })
+    });
   }
 
   // Pegando a imagem do filme
@@ -74,7 +92,7 @@ export class HomeComponent implements OnInit {
   }
 
   getRandomMovies() {
-    this.randomMovies = this.movies.map((movie) => ({ ...movie, random: Math.random() }))
+    this.randomMovies = this.topRatedMovies.map((movie) => ({ ...movie, random: Math.random() }))
       .sort((a, b) => a.random - b.random)
       .slice(0, 10);
   }

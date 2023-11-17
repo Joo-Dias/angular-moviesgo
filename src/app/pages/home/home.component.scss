@@ -1,15 +1,70 @@
+
 .home-container {
   border: 1px solid blue;
 
-  background-color: white;
-
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   margin-left: 16rem;
+  margin-top: .5rem;
 
   .home-containerCarousel {
+    width: 60rem;
+    position: relative;
 
+    border: 1px solid blue;
+
+    .icone-anterior {
+      font-size: xx-large;
+    }
+
+    .carousel-movieTitle {
+      width: 100%;
+      height: 100%;
+
+      position: absolute;
+      top: 20rem;
+      left: 2rem;
+
+      display: flex;
+      flex-direction: column;
+
+      span {
+        color: white;
+        font-size: xx-large;
+        font-weight: 700;
+
+        text-transform: uppercase;
+      }
+
+      button {
+        text-transform: uppercase;
+        font-size: medium;
+        font-weight: bolder;
+
+        color: white;
+
+        width: 15rem;
+        height: 4rem;
+
+        background-color: #AC1B1B;
+        border: 0px;
+
+        transition: background-color 0.5s ease;
+
+        &:hover {
+          background-color: white;
+          border: 2px solid #AC1B1B;
+          color: #AC1B1B;
+        }
+      }
+    }
+
+    img {
+      border-radius: 25px;
+    }
   }
 
   .home-containerMovieList {
@@ -20,6 +75,7 @@
     align-items: center;
 
     gap: 2rem;
+    margin-top: 1rem;
 
     .home-movieList {
       display: flex;
