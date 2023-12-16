@@ -12,12 +12,14 @@ import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { RandomMovieComponent } from './pages/random/random-movie/random-movie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MenuBarComponent
+    MenuBarComponent,
+    RandomMovieComponent
   ],
   imports: [
     BrowserModule,

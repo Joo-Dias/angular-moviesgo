@@ -34,18 +34,18 @@ export class HomeComponent implements OnInit {
   customOptions: OwlOptions = {
     items: 1,
     loop: true,
+    autoplay: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
-    dots: true,
+    dots: false,
     navSpeed: 700,
-    navText: ['<span class="setaEsquerda">Próximo</span>' , '<span class="setaDireita">Próximo</span>'],
+    nav: false,
     responsive: {
       0: {
         items: 1,
       }
     },
-    nav: true
   }
 
   constructor(

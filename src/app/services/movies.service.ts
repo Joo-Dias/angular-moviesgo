@@ -19,6 +19,11 @@ export class MoviesService {
   //   return this.http.get(url);
   // }
 
+  getRandomMovie(): Observable<any> {
+    const url = `${this.apiUrl}/movie/popular?api_key=${this.apiKey}&language=pt-BR&page=1`;
+    return this.http.get(url);
+  }
+
   getPopularMovies(): Observable<any> {
     const url = `${this.apiUrl}/movie/popular?api_key=${this.apiKey}&language=pt-BR&page=1`;
     return this.http.get(url);

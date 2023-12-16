@@ -1,0 +1,15 @@
+<div class="randomMovie-container">
+  <div class="movie-container" *ngIf="randomMovie">
+
+    <div class="movie-poster">
+      <img [src]="'https://image.tmdb.org/t/p/w500/' + randomMovie.poster_path" alt="{{ randomMovie.title }}">
+    </div>
+
+    <div class="movie-desc">
+      <h2>{{ randomMovie.title }}</h2>
+      <p>{{ randomMovie.overview }}</p>
+      <p>Estrelas: {{ randomMovie.vote_average }}</p>
+    </div>
+    <!-- <p>Gêneros: {{ getGenres() }}</p> -->
+  </div>
+</div>

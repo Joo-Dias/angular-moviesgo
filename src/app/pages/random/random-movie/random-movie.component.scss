@@ -1,0 +1,17 @@
+.randomMovie-container {
+  margin-left: 16rem;
+  margin-top: .5rem;
+
+
+  .movie-container {
+    background-color: #1F2428;
+
+    .movie-desc {
+      color: white;
+
+      h2 {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

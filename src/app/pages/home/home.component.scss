@@ -1,6 +1,5 @@
 
 .home-container {
-  border: 1px solid blue;
 
   display: flex;
   flex-direction: column;
@@ -13,8 +12,6 @@
   .home-containerCarousel {
     width: 60rem;
     position: relative;
-
-    border: 1px solid blue;
 
     .icone-anterior {
       font-size: xx-large;
@@ -43,6 +40,10 @@
         text-transform: uppercase;
         font-size: medium;
         font-weight: bolder;
+
+        border-radius: 25px;
+
+        margin-top: .7rem;
 
         color: white;
 
