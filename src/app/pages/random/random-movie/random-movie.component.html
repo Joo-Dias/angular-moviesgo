@@ -7,9 +7,19 @@
 
     <div class="movie-desc">
       <h2>{{ randomMovie.title }}</h2>
-      <p>{{ randomMovie.overview }}</p>
-      <p>Estrelas: {{ randomMovie.vote_average }}</p>
+      <p class="movie-overview">{{ randomMovie.overview }}</p>
+
+      <div class="movie-note">
+        <p>Notas: <span>{{ randomMovie.vote_average }}</span></p>
+      </div>
+
+      <!-- <p>Gêneros: {{ getGenres() }}</p> -->
+      <div class="movie-btnWatch">
+        <button>Assista</button>
+      </div>
+
     </div>
-    <!-- <p>Gêneros: {{ getGenres() }}</p> -->
+
+
   </div>
 </div>
