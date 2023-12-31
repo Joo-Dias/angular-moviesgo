@@ -1,6 +1,6 @@
 
 # MoviesGO 📺
-<img src="github/moviesGO" alt="Imagem do projeto"/>
+<img src="github/moviesGO.png" alt="Imagem do projeto"/>
 
 ## Tecnologias 🚀
 
